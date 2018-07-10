@@ -1,8 +1,11 @@
 # easy_music
 
-A new Flutter project.
+用的是网易云的开源api项目 https://github.com/Binaryify/NeteaseCloudMusicApi 
+
+感谢 Binaryify
 
 ## Getting Started
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+clone下来装好依赖就可以跑
+
+别的，想到再写
