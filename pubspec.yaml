@@ -1,0 +1,24 @@
+name: easy_music
+description: A new Flutter project.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  shared_preferences: ^0.4.2
+  url_launcher: ^3.0.0
+  path_provider: ^0.4.1
+  xml: ^3.0.0
+  flutter_redux: ^0.5.2
+  redux: ^3.0.0
+  redux_thunk: ^0.2.0
+  redux_logging: ^0.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/image/pic1.png
