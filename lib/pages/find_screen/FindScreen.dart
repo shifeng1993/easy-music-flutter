@@ -1,4 +1,4 @@
-// My
+// find
 import 'package:flutter/material.dart';
 // 引入页面
 import '../index.dart';
@@ -23,26 +23,26 @@ class _FindScreenState extends State<FindScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          _tabbar(context),
-          _body(context),
-        ],
-      ),
+      appBar: _tabbar(context),
+      body: _body(context),
     );
   }
 
   Widget _tabbar(BuildContext context) {
-    return Container(
-      child: TabBar(
-        controller: _tabController,
-        isScrollable: true,
-        tabs: const <Tab>[
-          const Tab(text: '推荐'),
-          const Tab(text: '朋友'),
-          const Tab(text: '电台'),
-        ],
+    return AppBar(
+      title: Container(
+        child: TabBar(
+          controller: _tabController,
+          isScrollable: false,
+          tabs: const <Tab>[
+            const Tab(text: '推荐'),
+            const Tab(text: '朋友'),
+            const Tab(text: '电台'),
+          ],
+        ),
       ),
+      centerTitle: true, // 消除 android 与 ios 页面title布局差异
+      elevation: 0.0, // 去掉appbar下面的阴影
     );
   }
 

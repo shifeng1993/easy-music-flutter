@@ -30,13 +30,14 @@ class _HomeScreenState extends State<HomeScreen>
       ),
     );
   }
-
+  
   Widget _appbar(BuildContext context) {
     return AppBar(
       title: Container(
         child: TabBar(
           controller: _tabController,
           isScrollable: true,
+          indicatorColor: Colors.transparent,
           tabs: const <Tab>[
             const Tab(text: '我的'),
             const Tab(text: '发现'),
