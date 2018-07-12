@@ -21,6 +21,8 @@ class App extends StatelessWidget {
       child: MaterialApp(
         theme: ThemeData(
           platform: TargetPlatform.iOS, // 使用ios的界面动画方式
+          primaryColor: const Color(0xffd33b32), // 应用主要部分的背景颜色（工具栏，标签栏等）
+          accentColor: Colors.white, // 前景色：旋钮，文本，过度滚动边缘效果等
         ),
         routes: <String, WidgetBuilder>{
           '/': (BuildContext context) => HomeScreen(),

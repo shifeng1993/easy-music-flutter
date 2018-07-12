@@ -22,15 +22,12 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Home',
-      home: Scaffold(
-        appBar: _appbar(context),
-        body: _body(context),
-      ),
+    return Scaffold(
+      appBar: _appbar(context),
+      body: _body(context),
     );
   }
-  
+
   Widget _appbar(BuildContext context) {
     return AppBar(
       title: Container(
