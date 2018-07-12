@@ -4,18 +4,27 @@ import 'package:flutter/material.dart';
 class MyScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'My',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('My'),
-          leading: FlatButton(
-            child: Text('返回'),
-            onPressed: () => Navigator.pop(context),
-          ),
-        ),
-        body: Center(
-          child: Text('My'),
+    return Scaffold(
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            Text(
+              '123',
+              style: new TextStyle(
+                fontSize: 24.0,
+              ),
+            ),
+            Container(
+              child: Column(
+                children: <Widget>[
+                  RaisedButton(
+                    child: Text('点击跳转到find'),
+                    onPressed: () => Navigator.of(context).pushNamed('/find'),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
