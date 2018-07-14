@@ -1,13 +1,11 @@
 // Suggest
 import 'package:flutter/material.dart';
 
-class SuggestScreen extends StatelessWidget {
+class FindSuggestScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('Suggest'),
-      ),
+    return Container(
+      child: Text('23'),
     );
   }
 

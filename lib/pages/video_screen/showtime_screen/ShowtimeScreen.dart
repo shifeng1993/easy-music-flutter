@@ -4,10 +4,8 @@ import 'package:flutter/material.dart';
 class ShowtimeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('Showtime'),
-      ),
+    return Center(
+      child: Text('Showtime'),
     );
   }
 

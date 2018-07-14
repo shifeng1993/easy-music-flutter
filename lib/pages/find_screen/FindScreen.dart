@@ -50,7 +50,7 @@ class _FindScreenState extends State<FindScreen>
     return TabBarView(
       controller: _tabController,
       children: <Widget>[
-        SuggestScreen(),
+        FindSuggestScreen(),
         FriendsScreen(),
         RadioScreen(),
       ],

@@ -1,7 +1,9 @@
 // Home
 import 'package:flutter/material.dart';
+
 // 引入页面
 import '../index.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen();
@@ -42,6 +44,14 @@ class _HomeScreenState extends State<HomeScreen>
           ],
         ),
       ),
+      leading: Center(
+        child: Text('菜单'),
+      ),
+      actions: <Widget>[
+        Center(
+          child: Text('搜索'),
+        )
+      ],
       centerTitle: true, // 消除 android 与 ios 页面title布局差异
       elevation: 0.0, // 去掉appbar下面的阴影
     );
