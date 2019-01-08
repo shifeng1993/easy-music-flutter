@@ -1,11 +1,4 @@
 # easy_music
+公司项目ui写完准备重启这个项目。 flutter sdk使用1.0
 
-用的是网易云的开源api项目 https://github.com/Binaryify/NeteaseCloudMusicApi 
-
-感谢 Binaryify
-
-## Getting Started
-
-clone下来装好依赖就可以跑
-
-别的，想到再写
+其余的暂时没想到，想到再写

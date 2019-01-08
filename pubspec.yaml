@@ -1,24 +1,80 @@
 name: easy_music
-description: A new Flutter project.
+description: A new Flutter application.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^0.1.2
-  shared_preferences: ^0.4.2
-  url_launcher: ^3.0.0
-  path_provider: ^0.4.1
-  xml: ^3.0.0
-  flutter_redux: ^0.5.2
-  redux: ^3.0.0
-  redux_thunk: ^0.2.0
-  redux_logging: ^0.3.0
+  cupertino_icons: ^0.1.2                     # ios的icon图标
+  shared_preferences: ^0.4.3                  # 键值对存储
+  url_launcher: ^4.0.3                        # url启动，支持电话，短信，网站，邮件
+  path_provider: ^0.4.1                       # 获取ios和android常用文件位置，例如app目录
+  xml: ^3.2.4                                 # 解析，遍历，查询，转换和构建XML文档
+  image_picker: ^0.4.10                       # 图片选择器，或者使用相机拍摄新照片
+  cached_network_image: ^0.5.1                # 缓存网络图片
+  connectivity: ^0.3.2                        # 获取网络状态
+  device_info: ^0.3.0                         # 获取设备信息
+  flutter_svg: ^0.9.0+1                       # 使用svg
+  camera: ^0.2.9                              # 相机组件
+  flutter_swiper: ^1.1.4                      # 轮播组件
+  flutter_spinkit: ^3.1.0                     # loading组件
+  local_auth: ^0.3.1                          # 设备身份验证，比如指纹
+  dio: ^1.0.13                                # http请求库
+  font_awesome_flutter: ^8.2.0                # fa的icon库
+  fluttertoast: ^2.2.3                        # toast组件
+  flutter_redux: ^0.5.3                       # flutter上的redux
+  redux: ^3.0.0                               # redux
+  redux_thunk: ^0.2.1                         # redux 异步中间件thunk
+  redux_persist: ^0.8.0                       # redux持久化
+  redux_logging: ^0.3.0                       # 打印当前的redux状态变化
+  reselect: ^0.4.0                            # redux状态获取
+  flutter_circular_chart: ^0.1.0              # 圆形图表
+  pull_to_refresh: ^1.1.6                     # 列表组件，下拉刷新和上拉加载
+  flustars: ^0.1.9                            # 常用工具类
+  unicorndial: ^1.1.5                         # floatActionButton菜单
+  smooth_star_rating: ^1.0.1                  # 评分控件
+  flutter_slidable: ^0.4.9                    # 水平滑动动作
+  charts_flutter: ^0.5.0                      # google chart
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  test: ^1.3.4
+  mockito: ^4.0.0                             # 测试中提供mock数据
 
 flutter:
-  uses-material-design: true
-  assets:
-  - assets/image/pic1.png
+  uses-material-design: true                  # 使用 MD 的 icon 和 font
+  assets:                                     # 静态资源
+    # 以下是1倍像素
+    - assets/images/
+    - assets/icons/
+    - assets/banner/
+    # 以下是2倍像素
+    - assets/images/2.0x/
+    - assets/icons/2.0x/
+    - assets/banner/2.0x/
+    # 以下是3倍像素
+    - assets/images/3.0x/
+    - assets/icons/3.0x/
+    - assets/banner/3.0x/
+    
+
+  # 自定义字体
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  
